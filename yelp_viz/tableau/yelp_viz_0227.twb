@@ -1,0 +1,2744 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0208.0337                               -->
+<workbook original-version='18.1' source-build='2024.1.0 (20241.24.0208.0337)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelRelationshipPerfOptions.true...ObjectModelRelationshipPerfOptions />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='yelp_raw_data (airflow)' inline='true' name='federated.160ci9p090wzw30zqqy3n0nzg8nq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localhost' name='postgres.1lcj9fc1s5v3sm1bo88sd00qrdim'>
+            <connection authentication='username-password' class='postgres' dbname='airflow' one-time-sql='' port='5432' server='localhost' username='postgres' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='postgres.1lcj9fc1s5v3sm1bo88sd00qrdim' name='yelp_category' table='[public].[yelp_category]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='postgres.1lcj9fc1s5v3sm1bo88sd00qrdim' name='yelp_raw_data' table='[public].[yelp_raw_data]' type='table' />
+          <relation connection='postgres.1lcj9fc1s5v3sm1bo88sd00qrdim' name='yelp_category' table='[public].[yelp_category]' type='table' />
+          <relation connection='postgres.1lcj9fc1s5v3sm1bo88sd00qrdim' name='yelp_processed_data' table='[public].[yelp_processed_data]' type='table' />
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[alias (yelp_category)]' value='[yelp_category].[alias]' />
+          <map key='[alias (yelp_processed_data)]' value='[yelp_processed_data].[alias]' />
+          <map key='[alias]' value='[yelp_raw_data].[alias]' />
+          <map key='[categories (yelp_processed_data)]' value='[yelp_processed_data].[categories]' />
+          <map key='[categories]' value='[yelp_raw_data].[categories]' />
+          <map key='[city]' value='[yelp_processed_data].[city]' />
+          <map key='[coordinates]' value='[yelp_raw_data].[coordinates]' />
+          <map key='[country]' value='[yelp_processed_data].[country]' />
+          <map key='[county]' value='[yelp_processed_data].[county]' />
+          <map key='[display_phone (yelp_processed_data)]' value='[yelp_processed_data].[display_phone]' />
+          <map key='[display_phone]' value='[yelp_raw_data].[display_phone]' />
+          <map key='[distance (yelp_processed_data)]' value='[yelp_processed_data].[distance]' />
+          <map key='[distance]' value='[yelp_raw_data].[distance]' />
+          <map key='[id (yelp_category)]' value='[yelp_category].[id]' />
+          <map key='[id (yelp_processed_data)]' value='[yelp_processed_data].[id]' />
+          <map key='[id]' value='[yelp_raw_data].[id]' />
+          <map key='[image_url (yelp_processed_data)]' value='[yelp_processed_data].[image_url]' />
+          <map key='[image_url]' value='[yelp_raw_data].[image_url]' />
+          <map key='[is_closed (yelp_processed_data)]' value='[yelp_processed_data].[is_closed]' />
+          <map key='[is_closed]' value='[yelp_raw_data].[is_closed]' />
+          <map key='[latitude]' value='[yelp_processed_data].[latitude]' />
+          <map key='[location (yelp_processed_data)]' value='[yelp_processed_data].[location]' />
+          <map key='[location]' value='[yelp_raw_data].[location]' />
+          <map key='[longitude]' value='[yelp_processed_data].[longitude]' />
+          <map key='[name (yelp_processed_data)]' value='[yelp_processed_data].[name]' />
+          <map key='[name]' value='[yelp_raw_data].[name]' />
+          <map key='[num_id]' value='[yelp_category].[num_id]' />
+          <map key='[phone (yelp_processed_data)]' value='[yelp_processed_data].[phone]' />
+          <map key='[phone]' value='[yelp_raw_data].[phone]' />
+          <map key='[price (yelp_processed_data)]' value='[yelp_processed_data].[price]' />
+          <map key='[price]' value='[yelp_raw_data].[price]' />
+          <map key='[rating (yelp_processed_data)]' value='[yelp_processed_data].[rating]' />
+          <map key='[rating]' value='[yelp_raw_data].[rating]' />
+          <map key='[review_count (yelp_processed_data)]' value='[yelp_processed_data].[review_count]' />
+          <map key='[review_count]' value='[yelp_raw_data].[review_count]' />
+          <map key='[state]' value='[yelp_processed_data].[state]' />
+          <map key='[title]' value='[yelp_category].[title]' />
+          <map key='[transactions (yelp_processed_data)]' value='[yelp_processed_data].[transactions]' />
+          <map key='[transactions]' value='[yelp_raw_data].[transactions]' />
+          <map key='[url (yelp_processed_data)]' value='[yelp_processed_data].[url]' />
+          <map key='[url]' value='[yelp_raw_data].[url]' />
+          <map key='[zip_code]' value='[yelp_processed_data].[zip_code]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[yelp_raw_data]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>false</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_raw_data_AA9ABAA07D7646A281FA6B6E4021D1E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>alias</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[alias]</local-name>
+            <parent-name>[yelp_raw_data]</parent-name>
+            <remote-alias>alias</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_raw_data_AA9ABAA07D7646A281FA6B6E4021D1E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[yelp_raw_data]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_raw_data_AA9ABAA07D7646A281FA6B6E4021D1E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>image_url</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[image_url]</local-name>
+            <parent-name>[yelp_raw_data]</parent-name>
+            <remote-alias>image_url</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_raw_data_AA9ABAA07D7646A281FA6B6E4021D1E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_closed</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[is_closed]</local-name>
+            <parent-name>[yelp_raw_data]</parent-name>
+            <remote-alias>is_closed</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_raw_data_AA9ABAA07D7646A281FA6B6E4021D1E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>url</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[url]</local-name>
+            <parent-name>[yelp_raw_data]</parent-name>
+            <remote-alias>url</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_raw_data_AA9ABAA07D7646A281FA6B6E4021D1E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>review_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[review_count]</local-name>
+            <parent-name>[yelp_raw_data]</parent-name>
+            <remote-alias>review_count</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_raw_data_AA9ABAA07D7646A281FA6B6E4021D1E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>categories</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[categories]</local-name>
+            <parent-name>[yelp_raw_data]</parent-name>
+            <remote-alias>categories</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_raw_data_AA9ABAA07D7646A281FA6B6E4021D1E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[rating]</local-name>
+            <parent-name>[yelp_raw_data]</parent-name>
+            <remote-alias>rating</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_raw_data_AA9ABAA07D7646A281FA6B6E4021D1E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>coordinates</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[coordinates]</local-name>
+            <parent-name>[yelp_raw_data]</parent-name>
+            <remote-alias>coordinates</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_raw_data_AA9ABAA07D7646A281FA6B6E4021D1E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transactions</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[transactions]</local-name>
+            <parent-name>[yelp_raw_data]</parent-name>
+            <remote-alias>transactions</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_raw_data_AA9ABAA07D7646A281FA6B6E4021D1E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[price]</local-name>
+            <parent-name>[yelp_raw_data]</parent-name>
+            <remote-alias>price</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>10</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_raw_data_AA9ABAA07D7646A281FA6B6E4021D1E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[location]</local-name>
+            <parent-name>[yelp_raw_data]</parent-name>
+            <remote-alias>location</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_raw_data_AA9ABAA07D7646A281FA6B6E4021D1E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>phone</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[phone]</local-name>
+            <parent-name>[yelp_raw_data]</parent-name>
+            <remote-alias>phone</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_raw_data_AA9ABAA07D7646A281FA6B6E4021D1E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>display_phone</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[display_phone]</local-name>
+            <parent-name>[yelp_raw_data]</parent-name>
+            <remote-alias>display_phone</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_raw_data_AA9ABAA07D7646A281FA6B6E4021D1E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distance</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[distance]</local-name>
+            <parent-name>[yelp_raw_data]</parent-name>
+            <remote-alias>distance</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_raw_data_AA9ABAA07D7646A281FA6B6E4021D1E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[num_id]</local-name>
+            <parent-name>[yelp_category]</parent-name>
+            <remote-alias>num_id</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_category_BF2A2E6FD04E40368449652AE0BCC688]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[id (yelp_category)]</local-name>
+            <parent-name>[yelp_category]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_category_BF2A2E6FD04E40368449652AE0BCC688]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>alias</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[alias (yelp_category)]</local-name>
+            <parent-name>[yelp_category]</parent-name>
+            <remote-alias>alias</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_category_BF2A2E6FD04E40368449652AE0BCC688]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[yelp_category]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_category_BF2A2E6FD04E40368449652AE0BCC688]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[id (yelp_processed_data)]</local-name>
+            <parent-name>[yelp_processed_data]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>false</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_processed_data_89B6065C7A7E4CB3AD09D616EDDFC421]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>alias</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[alias (yelp_processed_data)]</local-name>
+            <parent-name>[yelp_processed_data]</parent-name>
+            <remote-alias>alias</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_processed_data_89B6065C7A7E4CB3AD09D616EDDFC421]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name (yelp_processed_data)]</local-name>
+            <parent-name>[yelp_processed_data]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_processed_data_89B6065C7A7E4CB3AD09D616EDDFC421]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>image_url</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[image_url (yelp_processed_data)]</local-name>
+            <parent-name>[yelp_processed_data]</parent-name>
+            <remote-alias>image_url</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_processed_data_89B6065C7A7E4CB3AD09D616EDDFC421]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_closed</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[is_closed (yelp_processed_data)]</local-name>
+            <parent-name>[yelp_processed_data]</parent-name>
+            <remote-alias>is_closed</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_processed_data_89B6065C7A7E4CB3AD09D616EDDFC421]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>url</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[url (yelp_processed_data)]</local-name>
+            <parent-name>[yelp_processed_data]</parent-name>
+            <remote-alias>url</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_processed_data_89B6065C7A7E4CB3AD09D616EDDFC421]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>review_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[review_count (yelp_processed_data)]</local-name>
+            <parent-name>[yelp_processed_data]</parent-name>
+            <remote-alias>review_count</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_processed_data_89B6065C7A7E4CB3AD09D616EDDFC421]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>categories</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[categories (yelp_processed_data)]</local-name>
+            <parent-name>[yelp_processed_data]</parent-name>
+            <remote-alias>categories</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_processed_data_89B6065C7A7E4CB3AD09D616EDDFC421]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[rating (yelp_processed_data)]</local-name>
+            <parent-name>[yelp_processed_data]</parent-name>
+            <remote-alias>rating</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_processed_data_89B6065C7A7E4CB3AD09D616EDDFC421]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transactions</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[transactions (yelp_processed_data)]</local-name>
+            <parent-name>[yelp_processed_data]</parent-name>
+            <remote-alias>transactions</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_processed_data_89B6065C7A7E4CB3AD09D616EDDFC421]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[price (yelp_processed_data)]</local-name>
+            <parent-name>[yelp_processed_data]</parent-name>
+            <remote-alias>price</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>10</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_processed_data_89B6065C7A7E4CB3AD09D616EDDFC421]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[location (yelp_processed_data)]</local-name>
+            <parent-name>[yelp_processed_data]</parent-name>
+            <remote-alias>location</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_processed_data_89B6065C7A7E4CB3AD09D616EDDFC421]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>phone</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[phone (yelp_processed_data)]</local-name>
+            <parent-name>[yelp_processed_data]</parent-name>
+            <remote-alias>phone</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_processed_data_89B6065C7A7E4CB3AD09D616EDDFC421]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>display_phone</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[display_phone (yelp_processed_data)]</local-name>
+            <parent-name>[yelp_processed_data]</parent-name>
+            <remote-alias>display_phone</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_processed_data_89B6065C7A7E4CB3AD09D616EDDFC421]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distance</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[distance (yelp_processed_data)]</local-name>
+            <parent-name>[yelp_processed_data]</parent-name>
+            <remote-alias>distance</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_processed_data_89B6065C7A7E4CB3AD09D616EDDFC421]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[yelp_processed_data]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_processed_data_89B6065C7A7E4CB3AD09D616EDDFC421]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[yelp_processed_data]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_processed_data_89B6065C7A7E4CB3AD09D616EDDFC421]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>zip_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[zip_code]</local-name>
+            <parent-name>[yelp_processed_data]</parent-name>
+            <remote-alias>zip_code</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_processed_data_89B6065C7A7E4CB3AD09D616EDDFC421]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[yelp_processed_data]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_processed_data_89B6065C7A7E4CB3AD09D616EDDFC421]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[yelp_processed_data]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_processed_data_89B6065C7A7E4CB3AD09D616EDDFC421]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[yelp_processed_data]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>5</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_processed_data_89B6065C7A7E4CB3AD09D616EDDFC421]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>county</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[county]</local-name>
+            <parent-name>[yelp_processed_data]</parent-name>
+            <remote-alias>county</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yelp_processed_data_89B6065C7A7E4CB3AD09D616EDDFC421]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='yelp_category' datatype='table' name='[__tableau_internal_object_id__].[yelp_category_BF2A2E6FD04E40368449652AE0BCC688]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='yelp_processed_data' datatype='table' name='[__tableau_internal_object_id__].[yelp_processed_data_89B6065C7A7E4CB3AD09D616EDDFC421]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='yelp_raw_data' datatype='table' name='[__tableau_internal_object_id__].[yelp_raw_data_AA9ABAA07D7646A281FA6B6E4021D1E4]' role='measure' type='quantitative' />
+      <column caption='Alias (Yelp Category)' datatype='string' name='[alias (yelp_category)]' role='dimension' type='nominal' />
+      <column caption='Alias (Yelp Processed Data)' datatype='string' name='[alias (yelp_processed_data)]' role='dimension' type='nominal' />
+      <column caption='Alias' datatype='string' name='[alias]' role='dimension' type='nominal' />
+      <column caption='Categories (Yelp Processed Data)' datatype='string' name='[categories (yelp_processed_data)]' role='dimension' type='nominal' />
+      <column caption='Categories' datatype='string' name='[categories]' role='dimension' type='nominal' />
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Coordinates' datatype='string' name='[coordinates]' role='dimension' type='nominal' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Display Phone (Yelp Processed Data)' datatype='string' name='[display_phone (yelp_processed_data)]' role='dimension' type='nominal' />
+      <column caption='Display Phone' datatype='string' name='[display_phone]' role='dimension' type='nominal' />
+      <column caption='Distance (Yelp Processed Data)' datatype='real' name='[distance (yelp_processed_data)]' role='measure' type='quantitative' />
+      <column caption='Distance' datatype='real' name='[distance]' role='measure' type='quantitative' />
+      <column caption='Id (Yelp Category)' datatype='string' name='[id (yelp_category)]' role='dimension' type='nominal' />
+      <column caption='Id (Yelp Processed Data)' datatype='string' name='[id (yelp_processed_data)]' role='dimension' type='nominal' />
+      <column caption='Id' datatype='string' name='[id]' role='dimension' type='nominal' />
+      <column caption='Image Url (Yelp Processed Data)' datatype='string' name='[image_url (yelp_processed_data)]' role='dimension' type='nominal' />
+      <column caption='Image Url' datatype='string' name='[image_url]' role='dimension' type='nominal' />
+      <column caption='Is Closed (Yelp Processed Data)' datatype='string' name='[is_closed (yelp_processed_data)]' role='dimension' type='nominal' />
+      <column caption='Is Closed' datatype='string' name='[is_closed]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column caption='Location (Yelp Processed Data)' datatype='string' name='[location (yelp_processed_data)]' role='dimension' type='nominal' />
+      <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Name (Yelp Processed Data)' datatype='string' name='[name (yelp_processed_data)]' role='dimension' type='nominal' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Num Id' datatype='integer' name='[num_id]' role='dimension' type='ordinal' />
+      <column caption='Phone (Yelp Processed Data)' datatype='string' name='[phone (yelp_processed_data)]' role='dimension' type='nominal' />
+      <column caption='Phone' datatype='string' name='[phone]' role='dimension' type='nominal' />
+      <column caption='Price (Yelp Processed Data)' datatype='string' name='[price (yelp_processed_data)]' role='dimension' type='nominal' />
+      <column caption='Price' datatype='string' name='[price]' role='dimension' type='nominal' />
+      <column caption='Rating (Yelp Processed Data)' datatype='real' name='[rating (yelp_processed_data)]' role='measure' type='quantitative' />
+      <column caption='Rating' datatype='real' name='[rating]' role='measure' type='quantitative' />
+      <column caption='Review Count (Yelp Processed Data)' datatype='integer' name='[review_count (yelp_processed_data)]' role='measure' type='quantitative' />
+      <column caption='Review Count' datatype='integer' name='[review_count]' role='measure' type='quantitative' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' type='nominal' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Transactions (Yelp Processed Data)' datatype='string' name='[transactions (yelp_processed_data)]' role='dimension' type='nominal' />
+      <column caption='Transactions' datatype='string' name='[transactions]' role='dimension' type='nominal' />
+      <column caption='Url (Yelp Processed Data)' datatype='string' name='[url (yelp_processed_data)]' role='dimension' type='nominal' />
+      <column caption='Url' datatype='string' name='[url]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Zip Code' datatype='integer' default-format='*00000' name='[zip_code]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+      <drill-paths>
+        <drill-path name='country, city' />
+      </drill-paths>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:title:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Armenian&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Butcher&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Cooking Schools&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Food Trucks&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Grocery&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Kebab&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Peruvian&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Pool Halls&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Swimming Pools&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;American&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Cantonese&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Cocktail Bars&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Dinner Theater&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Gelato&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Irish&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Mediterranean&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Pet Boarding&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Venues &amp; Event Spaces&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Bubble Tea&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Comfort Food&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Educational Services&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Fast Food&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Golf&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Japanese&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Lounges&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Modern European&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Photo Booth Rentals&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Steakhouses&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Whiskey Bars&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Coffee &amp; Tea&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Bakeries&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Beaches&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Cuban&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Food Court&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Himalayan/Nepalese&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Laotian&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Pan Asian&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Salvadoran&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Tapas/Small Plates&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Asian Fusion&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Cafes&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Country Clubs&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Filipino&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Halal&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Kids Activities&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;New Mexican Cuisine&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Pubs&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Szechuan&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Aquariums&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Buffets&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Community Service/Non-Profit&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Empanadas&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Golf Equipment&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Japanese Curry&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Mongolian&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Soup&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Street Vendors&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Wine Bars&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Seafood&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Bowling&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Chinese&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Dim Sum&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Gastropubs&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Indonesian&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Malaysian&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Smokehouse&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Vegan&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Acai Bowls&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Breweries&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Custom Cakes&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Dive Bars&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;German&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Irish Pub&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Persian/Iranian&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Pet Groomers&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Vietnamese&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Beverage Store&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Chicken Wings&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Delis&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;French&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Ice Cream &amp; Frozen Yogurt&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Pasta Shops&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Pizza&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Shaved Ice&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Tex-Mex&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Arcades&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Caribbean&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Convenience Stores&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Ethiopian&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Golf Lessons&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Juice Bars &amp; Smoothies&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Museums&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Poke&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Summer Camps&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Wraps&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Beer Bar&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Cupcakes&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Food Delivery Services&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Hookah Bars&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Latin American&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Pancakes&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Southern&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Sushi Bars&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Tea Rooms&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Bars&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Beer Gardens&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Caterers&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Food Stands&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Hot Dogs&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Lebanese&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Parks&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Spanish&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Tennis&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Bookstores&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Children&apos;s Museums&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Desserts&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Gas Stations&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Indian&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Patisserie/Cake Shop&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Singaporean&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Thai&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Brazilian&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Chocolatiers &amp; Shops&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Diners&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Gay Bars&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;International Grocery&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Meat Shops&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Soul Food&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Vegetarian&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Burgers&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Cajun/Creole&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Country Dance Halls&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Fish &amp; Chips&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Hawaiian&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Macarons&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Noodles&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Ramen&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Tacos&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Korean&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Mexican&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Argentine&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Burmese&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Conveyor Belt Sushi&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Falafel&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Greek&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Karaoke&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Music Venues&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Polish&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Wedding Planning&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Zoos&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Barbeque&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Breakfast &amp; Brunch&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Brewpubs&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Coffee Roasteries&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Dog Parks&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Gluten-Free&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Italian&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Middle Eastern&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Pet Sitting&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Waffles&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Beer, Wine &amp; Spirits&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Chicken Shop&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Dance Clubs&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Hot Pot&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Live/Raw Food&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Party &amp; Event Planning&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Seafood Markets&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Teppanyaki&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Bagels&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Cambodian&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Creperies&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Fondue&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Hiking&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Lakes&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Pakistani&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Salad&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Taiwanese&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;New American&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Sandwiches&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Amusement Parks&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;British&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Colombian&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Donuts&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Go Karts&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Izakaya&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Mini Golf&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Pet Training&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Sports Bars&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;中国&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='yelp_category' id='yelp_category_BF2A2E6FD04E40368449652AE0BCC688'>
+            <properties context=''>
+              <relation connection='postgres.1lcj9fc1s5v3sm1bo88sd00qrdim' name='yelp_category' table='[public].[yelp_category]' type='table' />
+            </properties>
+          </object>
+          <object caption='yelp_processed_data' id='yelp_processed_data_89B6065C7A7E4CB3AD09D616EDDFC421'>
+            <properties context=''>
+              <relation connection='postgres.1lcj9fc1s5v3sm1bo88sd00qrdim' name='yelp_processed_data' table='[public].[yelp_processed_data]' type='table' />
+            </properties>
+          </object>
+          <object caption='yelp_raw_data' id='yelp_raw_data_AA9ABAA07D7646A281FA6B6E4021D1E4'>
+            <properties context=''>
+              <relation connection='postgres.1lcj9fc1s5v3sm1bo88sd00qrdim' name='yelp_raw_data' table='[public].[yelp_raw_data]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[id]' />
+              <expression op='[id (yelp_category)]' />
+            </expression>
+            <first-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='yelp_raw_data_AA9ABAA07D7646A281FA6B6E4021D1E4' unique-key='true' />
+            <second-end-point object-id='yelp_category_BF2A2E6FD04E40368449652AE0BCC688' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[id (yelp_category)]' />
+              <expression op='[id (yelp_processed_data)]' />
+            </expression>
+            <first-end-point object-id='yelp_category_BF2A2E6FD04E40368449652AE0BCC688' />
+            <second-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='yelp_processed_data_89B6065C7A7E4CB3AD09D616EDDFC421' unique-key='true' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='yelp_raw_data (airflow)' name='federated.160ci9p090wzw30zqqy3n0nzg8nq' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.160ci9p090wzw30zqqy3n0nzg8nq'>
+            <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column-instance column='[county]' derivation='None' name='[none:county:nk]' pivot='key' type='nominal' />
+            <column-instance column='[latitude]' derivation='None' name='[none:latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[longitude]' derivation='None' name='[none:longitude:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.160ci9p090wzw30zqqy3n0nzg8nq].[none:longitude:qk]' field-type='quantitative' max='-12939952.562056925' min='-13334503.148920208' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.160ci9p090wzw30zqqy3n0nzg8nq].[none:latitude:qk]' field-type='quantitative' max='4214497.3400224019' min='3942789.3681265367' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='admin-2-boundaries-bg' value='true' />
+            <format attr='enabled' id='admin-2-boundaries' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <lod column='[federated.160ci9p090wzw30zqqy3n0nzg8nq].[none:county:nk]' />
+              <geometry column='[federated.160ci9p090wzw30zqqy3n0nzg8nq].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.160ci9p090wzw30zqqy3n0nzg8nq].[none:latitude:qk]</rows>
+        <cols>[federated.160ci9p090wzw30zqqy3n0nzg8nq].[none:longitude:qk]</cols>
+      </table>
+      <simple-id uuid='{3CF14C4F-36D1-4458-AF07-57BE35BD72E2}' />
+    </worksheet>
+    <worksheet name='工作表 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Top 10 categories with most reviews</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='yelp_raw_data (airflow)' name='federated.160ci9p090wzw30zqqy3n0nzg8nq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.160ci9p090wzw30zqqy3n0nzg8nq'>
+            <column caption='Alias (Yelp Category)' datatype='string' name='[alias (yelp_category)]' role='dimension' type='nominal' />
+            <column-instance column='[rating]' derivation='Avg' name='[avg:rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[review_count]' derivation='Avg' name='[avg:review_count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[id (yelp_category)]' derivation='CountD' name='[ctd:id (yelp_category):qk]' pivot='key' type='quantitative' />
+            <column caption='Id (Yelp Category)' datatype='string' name='[id (yelp_category)]' role='dimension' type='nominal' />
+            <column-instance column='[alias (yelp_category)]' derivation='None' name='[none:alias (yelp_category):nk]' pivot='key' type='nominal' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column caption='Rating' datatype='real' name='[rating]' role='measure' type='quantitative' />
+            <column caption='Review Count' datatype='integer' name='[review_count]' role='measure' type='quantitative' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.160ci9p090wzw30zqqy3n0nzg8nq].[none:alias (yelp_category):nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([review_count])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:alias (yelp_category):nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.160ci9p090wzw30zqqy3n0nzg8nq].[none:alias (yelp_category):nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.160ci9p090wzw30zqqy3n0nzg8nq].[avg:rating:qk]' field-type='quantitative' max='4.1580684577629272' min='3.0' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.160ci9p090wzw30zqqy3n0nzg8nq].[avg:review_count:qk]' field-type='quantitative' max='1085.0121866899815' min='400.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.160ci9p090wzw30zqqy3n0nzg8nq].[none:title:nk]' />
+              <size column='[federated.160ci9p090wzw30zqqy3n0nzg8nq].[ctd:id (yelp_category):qk]' />
+              <text column='[federated.160ci9p090wzw30zqqy3n0nzg8nq].[none:title:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='size' value='3.6132595539093018' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.160ci9p090wzw30zqqy3n0nzg8nq].[avg:review_count:qk]</rows>
+        <cols>[federated.160ci9p090wzw30zqqy3n0nzg8nq].[avg:rating:qk]</cols>
+      </table>
+      <simple-id uuid='{71F651DF-714E-4FEF-8BC6-37082EB7060E}' />
+    </worksheet>
+    <worksheet name='工作表 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='yelp_raw_data (airflow)' name='federated.160ci9p090wzw30zqqy3n0nzg8nq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.160ci9p090wzw30zqqy3n0nzg8nq'>
+            <column-instance column='[id]' derivation='CountD' name='[ctd:id:qk]' pivot='key' type='quantitative' />
+            <column caption='Id' datatype='string' name='[id]' role='dimension' type='nominal' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.160ci9p090wzw30zqqy3n0nzg8nq].[none:title:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Mexican&quot;</bucket>
+              <bucket>&quot;Breakfast &amp; Brunch&quot;</bucket>
+              <bucket>&quot;American&quot;</bucket>
+              <bucket>&quot;Coffee &amp; Tea&quot;</bucket>
+              <bucket>&quot;Seafood&quot;</bucket>
+              <bucket>&quot;Fast Food&quot;</bucket>
+              <bucket>&quot;Sandwiches&quot;</bucket>
+              <bucket>&quot;Burgers&quot;</bucket>
+              <bucket>&quot;Sushi Bars&quot;</bucket>
+              <bucket>&quot;Pizza&quot;</bucket>
+              <bucket>&quot;Japanese&quot;</bucket>
+              <bucket>&quot;Barbeque&quot;</bucket>
+              <bucket>&quot;Italian&quot;</bucket>
+              <bucket>&quot;New American&quot;</bucket>
+              <bucket>&quot;Chicken Wings&quot;</bucket>
+              <bucket>&quot;Salad&quot;</bucket>
+              <bucket>&quot;Desserts&quot;</bucket>
+              <bucket>&quot;Thai&quot;</bucket>
+              <bucket>&quot;Korean&quot;</bucket>
+              <bucket>&quot;Bakeries&quot;</bucket>
+              <bucket>&quot;Bars&quot;</bucket>
+              <bucket>&quot;Asian Fusion&quot;</bucket>
+              <bucket>&quot;Mediterranean&quot;</bucket>
+              <bucket>&quot;Noodles&quot;</bucket>
+              <bucket>&quot;Chinese&quot;</bucket>
+              <bucket>&quot;Soup&quot;</bucket>
+              <bucket>&quot;Cocktail Bars&quot;</bucket>
+              <bucket>&quot;Ice Cream &amp; Frozen Yogurt&quot;</bucket>
+              <bucket>&quot;Vietnamese&quot;</bucket>
+              <bucket>&quot;Steakhouses&quot;</bucket>
+              <bucket>&quot;Tacos&quot;</bucket>
+              <bucket>&quot;Juice Bars &amp; Smoothies&quot;</bucket>
+              <bucket>&quot;Ramen&quot;</bucket>
+              <bucket>&quot;Delis&quot;</bucket>
+              <bucket>&quot;Cafes&quot;</bucket>
+              <bucket>&quot;Chicken Shop&quot;</bucket>
+              <bucket>&quot;Sports Bars&quot;</bucket>
+              <bucket>&quot;Diners&quot;</bucket>
+              <bucket>&quot;Food Trucks&quot;</bucket>
+              <bucket>&quot;Bubble Tea&quot;</bucket>
+              <bucket>&quot;Middle Eastern&quot;</bucket>
+              <bucket>&quot;Halal&quot;</bucket>
+              <bucket>&quot;Donuts&quot;</bucket>
+              <bucket>&quot;Comfort Food&quot;</bucket>
+              <bucket>&quot;Beer Bar&quot;</bucket>
+              <bucket>&quot;Hawaiian&quot;</bucket>
+              <bucket>&quot;Wine Bars&quot;</bucket>
+              <bucket>&quot;Venues &amp; Event Spaces&quot;</bucket>
+              <bucket>&quot;Greek&quot;</bucket>
+              <bucket>&quot;Custom Cakes&quot;</bucket>
+              <bucket>&quot;Indian&quot;</bucket>
+              <bucket>&quot;Vegan&quot;</bucket>
+              <bucket>&quot;Latin American&quot;</bucket>
+              <bucket>&quot;Fish &amp; Chips&quot;</bucket>
+              <bucket>&quot;Cajun/Creole&quot;</bucket>
+              <bucket>&quot;Buffets&quot;</bucket>
+              <bucket>&quot;Southern&quot;</bucket>
+              <bucket>&quot;Caterers&quot;</bucket>
+              <bucket>&quot;Peruvian&quot;</bucket>
+              <bucket>&quot;Vegetarian&quot;</bucket>
+              <bucket>&quot;Poke&quot;</bucket>
+              <bucket>&quot;Hot Pot&quot;</bucket>
+              <bucket>&quot;Cupcakes&quot;</bucket>
+              <bucket>&quot;Tex-Mex&quot;</bucket>
+              <bucket>&quot;Gastropubs&quot;</bucket>
+              <bucket>&quot;Breweries&quot;</bucket>
+              <bucket>&quot;Waffles&quot;</bucket>
+              <bucket>&quot;Filipino&quot;</bucket>
+              <bucket>&quot;Bagels&quot;</bucket>
+              <bucket>&quot;Acai Bowls&quot;</bucket>
+              <bucket>&quot;Shaved Ice&quot;</bucket>
+              <bucket>&quot;Kebab&quot;</bucket>
+              <bucket>&quot;Teppanyaki&quot;</bucket>
+              <bucket>&quot;Tapas/Small Plates&quot;</bucket>
+              <bucket>&quot;Pubs&quot;</bucket>
+              <bucket>&quot;Persian/Iranian&quot;</bucket>
+              <bucket>&quot;Dim Sum&quot;</bucket>
+              <bucket>&quot;Creperies&quot;</bucket>
+              <bucket>&quot;Amusement Parks&quot;</bucket>
+              <bucket>&quot;Wraps&quot;</bucket>
+              <bucket>&quot;Taiwanese&quot;</bucket>
+              <bucket>&quot;Patisserie/Cake Shop&quot;</bucket>
+              <bucket>&quot;Music Venues&quot;</bucket>
+              <bucket>&quot;Grocery&quot;</bucket>
+              <bucket>&quot;Gluten-Free&quot;</bucket>
+              <bucket>&quot;French&quot;</bucket>
+              <bucket>&quot;Smokehouse&quot;</bucket>
+              <bucket>&quot;Parks&quot;</bucket>
+              <bucket>&quot;Lebanese&quot;</bucket>
+              <bucket>&quot;Hot Dogs&quot;</bucket>
+              <bucket>&quot;Golf&quot;</bucket>
+              <bucket>&quot;Dive Bars&quot;</bucket>
+              <bucket>&quot;Cuban&quot;</bucket>
+              <bucket>&quot;Tea Rooms&quot;</bucket>
+              <bucket>&quot;Soul Food&quot;</bucket>
+              <bucket>&quot;Seafood Markets&quot;</bucket>
+              <bucket>&quot;Salvadoran&quot;</bucket>
+              <bucket>&quot;Meat Shops&quot;</bucket>
+              <bucket>&quot;Izakaya&quot;</bucket>
+              <bucket>&quot;Dog Parks&quot;</bucket>
+              <bucket>&quot;Coffee Roasteries&quot;</bucket>
+              <bucket>&quot;Armenian&quot;</bucket>
+              <bucket>&quot;Spanish&quot;</bucket>
+              <bucket>&quot;Macarons&quot;</bucket>
+              <bucket>&quot;Karaoke&quot;</bucket>
+              <bucket>&quot;Gelato&quot;</bucket>
+              <bucket>&quot;Falafel&quot;</bucket>
+              <bucket>&quot;Cambodian&quot;</bucket>
+              <bucket>&quot;Pan Asian&quot;</bucket>
+              <bucket>&quot;New Mexican Cuisine&quot;</bucket>
+              <bucket>&quot;Lounges&quot;</bucket>
+              <bucket>&quot;Irish Pub&quot;</bucket>
+              <bucket>&quot;Hiking&quot;</bucket>
+              <bucket>&quot;British&quot;</bucket>
+              <bucket>&quot;Brewpubs&quot;</bucket>
+              <bucket>&quot;Brazilian&quot;</bucket>
+              <bucket>&quot;Beer, Wine &amp; Spirits&quot;</bucket>
+              <bucket>&quot;Argentine&quot;</bucket>
+              <bucket>&quot;Zoos&quot;</bucket>
+              <bucket>&quot;Wedding Planning&quot;</bucket>
+              <bucket>&quot;Szechuan&quot;</bucket>
+              <bucket>&quot;Pet Training&quot;</bucket>
+              <bucket>&quot;Pet Boarding&quot;</bucket>
+              <bucket>&quot;Pancakes&quot;</bucket>
+              <bucket>&quot;Pakistani&quot;</bucket>
+              <bucket>&quot;Laotian&quot;</bucket>
+              <bucket>&quot;Kids Activities&quot;</bucket>
+              <bucket>&quot;Japanese Curry&quot;</bucket>
+              <bucket>&quot;Irish&quot;</bucket>
+              <bucket>&quot;Go Karts&quot;</bucket>
+              <bucket>&quot;Food Stands&quot;</bucket>
+              <bucket>&quot;Food Delivery Services&quot;</bucket>
+              <bucket>&quot;Food Court&quot;</bucket>
+              <bucket>&quot;Empanadas&quot;</bucket>
+              <bucket>&quot;Educational Services&quot;</bucket>
+              <bucket>&quot;Dinner Theater&quot;</bucket>
+              <bucket>&quot;Conveyor Belt Sushi&quot;</bucket>
+              <bucket>&quot;Community Service/Non-Profit&quot;</bucket>
+              <bucket>&quot;Children&apos;s Museums&quot;</bucket>
+              <bucket>&quot;Cantonese&quot;</bucket>
+              <bucket>&quot;Beaches&quot;</bucket>
+              <bucket>&quot;Whiskey Bars&quot;</bucket>
+              <bucket>&quot;Tennis&quot;</bucket>
+              <bucket>&quot;Swimming Pools&quot;</bucket>
+              <bucket>&quot;Summer Camps&quot;</bucket>
+              <bucket>&quot;Street Vendors&quot;</bucket>
+              <bucket>&quot;Singaporean&quot;</bucket>
+              <bucket>&quot;Pool Halls&quot;</bucket>
+              <bucket>&quot;Polish&quot;</bucket>
+              <bucket>&quot;Photo Booth Rentals&quot;</bucket>
+              <bucket>&quot;Pet Sitting&quot;</bucket>
+              <bucket>&quot;Pet Groomers&quot;</bucket>
+              <bucket>&quot;Pasta Shops&quot;</bucket>
+              <bucket>&quot;Party &amp; Event Planning&quot;</bucket>
+              <bucket>&quot;Museums&quot;</bucket>
+              <bucket>&quot;Mongolian&quot;</bucket>
+              <bucket>&quot;Modern European&quot;</bucket>
+              <bucket>&quot;Mini Golf&quot;</bucket>
+              <bucket>&quot;Malaysian&quot;</bucket>
+              <bucket>&quot;Live/Raw Food&quot;</bucket>
+              <bucket>&quot;Lakes&quot;</bucket>
+              <bucket>&quot;International Grocery&quot;</bucket>
+              <bucket>&quot;Indonesian&quot;</bucket>
+              <bucket>&quot;Hookah Bars&quot;</bucket>
+              <bucket>&quot;Himalayan/Nepalese&quot;</bucket>
+              <bucket>&quot;Golf Lessons&quot;</bucket>
+              <bucket>&quot;Golf Equipment&quot;</bucket>
+              <bucket>&quot;German&quot;</bucket>
+              <bucket>&quot;Gay Bars&quot;</bucket>
+              <bucket>&quot;Gas Stations&quot;</bucket>
+              <bucket>&quot;Fondue&quot;</bucket>
+              <bucket>&quot;Ethiopian&quot;</bucket>
+              <bucket>&quot;Dance Clubs&quot;</bucket>
+              <bucket>&quot;Country Dance Halls&quot;</bucket>
+              <bucket>&quot;Country Clubs&quot;</bucket>
+              <bucket>&quot;Cooking Schools&quot;</bucket>
+              <bucket>&quot;Convenience Stores&quot;</bucket>
+              <bucket>&quot;Colombian&quot;</bucket>
+              <bucket>&quot;Chocolatiers &amp; Shops&quot;</bucket>
+              <bucket>&quot;Caribbean&quot;</bucket>
+              <bucket>&quot;Butcher&quot;</bucket>
+              <bucket>&quot;Burmese&quot;</bucket>
+              <bucket>&quot;Bowling&quot;</bucket>
+              <bucket>&quot;Bookstores&quot;</bucket>
+              <bucket>&quot;Beverage Store&quot;</bucket>
+              <bucket>&quot;Beer Gardens&quot;</bucket>
+              <bucket>&quot;Arcades&quot;</bucket>
+              <bucket>&quot;Aquariums&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.160ci9p090wzw30zqqy3n0nzg8nq].[none:title:nk]</rows>
+        <cols>[federated.160ci9p090wzw30zqqy3n0nzg8nq].[ctd:id:qk]</cols>
+      </table>
+      <simple-id uuid='{FBAC2084-5BD7-4206-A450-3B540912E4E1}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='3' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{4E8A3CED-1561-467D-85C9-DB4FDC62B7B5}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='工作表 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.160ci9p090wzw30zqqy3n0nzg8nq].[ctd:id (yelp_category):qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.160ci9p090wzw30zqqy3n0nzg8nq].[none:title:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.160ci9p090wzw30zqqy3n0nzg8nq].[avg:rating:qk]</field>
+            <field>[federated.160ci9p090wzw30zqqy3n0nzg8nq].[none:alias (yelp_category):nk]</field>
+            <field>[federated.160ci9p090wzw30zqqy3n0nzg8nq].[none:alias:nk]</field>
+            <field>[federated.160ci9p090wzw30zqqy3n0nzg8nq].[none:id (yelp_category):nk]</field>
+            <field>[federated.160ci9p090wzw30zqqy3n0nzg8nq].[none:id:nk]</field>
+            <field>[federated.160ci9p090wzw30zqqy3n0nzg8nq].[none:title:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1F267647-B42A-4523-97D7-B7418953B865}' />
+    </window>
+    <window class='worksheet' name='工作表 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.160ci9p090wzw30zqqy3n0nzg8nq].[none:id:nk]</field>
+            <field>[federated.160ci9p090wzw30zqqy3n0nzg8nq].[none:title:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3DF4C6E9-39D8-4E24-BF6A-2B15752069B9}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.160ci9p090wzw30zqqy3n0nzg8nq].[none:county:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9E70F011-4D58-4CF5-9D3A-BED9A6D0D7A9}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{573EF659-7079-4E48-95CD-A44FB2875517}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      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
+      Yiye/AAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='工作表 1' width='192'>
+      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
+      /sarAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='工作表 2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAgAElEQVR4nO29aYwkaXrf94szI/K+szKzqrLu6p7u6bl2ludSlpbSEgQl0dIXfbAgQxAg
+      SKABw4Jg6IMOQAYM2IZlA6INwoANCZApUxIkiIKWXC6Xw+Xuatd7zM5Mz/T0VXdlVmXlfUVm
+      xqUPVd07s31XZFdlVcfvy/SgMp54MzKeeOP/vM/7PILrui4+Pq8o4nkPwMfnPPEdwOeVxncA
+      n1ca3wF8Xml8B/B5pfEdwOeV5kI6gOu6eI3eTsKG4zgTGYfjOJ5tXJbr4fVavKgN2fPZzgHX
+      dfl3f/IpXcP0YMNBEARAOL0Nx0EQvdmA4xtPEE7/LHpw0x1/n9PamI7r4TgOoujtufwiNs7c
+      AcajBn/yrbv86T91g9/9/T/mz//Kl6k12iRiYZBUnNGAzsghKDvYggqmgavoaDJ0ugNS6TQA
+      X/v+fSqN/lkP3+eScQ4zgEA4ILNfOSSdm+HOxx9QOWowu3KNRmWH9bVVDutd3GGf0kKJvZ0t
+      9usGhWyERFCmrMQoRKWzH7bPpeRcNEC+kOXe5iGJcICAppMtzBPXJfRgiP7AQBBE7PGQXrdD
+      27DQFRk1GCaTjGE7fuaGz+QQzjoX6HGne9w72/HnBODR91vXdflX731CdzD2Ng4BBC/vq66D
+      6OHdHU6+net6fH+fhAaYjutx1hrgzB1gEjiOQ394egH8wIYgCJ5uGtu2kSRvr2OuezwWSTr9
+      j+64LriupxtnWq7HWdt4qgbo1Q/YqDSIJVKUirnHfmbQqiNGUmiSy8ad2+Tmlwlpyk8+4Nr0
+      DZNQUMPoNrm7uUNp5SqxoMq92x8zNGF5/Sq68vQfr95okEomH/7/3/0/vuaLYB/PPNUBhr0O
+      ejRGp91kc9BADMYxuw0sOUQqJFGpdchGAowGY1TB5M5GBT0c4f5Rg0IhzW65TiEb4f2b23zp
+      Sz+HZfRwBRFjMCIWVBmOxmiySL3eoF7dJxiOslDMUq73aB3uIukxMhGVes/CGXep7G1TXL5O
+      TPdFsM9keMacKaAGNHBdTEdifibE5nYNy7Zotlq0GlW6A4N7W/uksxlK8wuMjB6jXpPWwEJT
+      wBFU5ucXCAZkGu0+om1yVK/hApIsEwoGGPQHxDMFRHuEbY7p9gZEk1l0VaLZMbiyuogeirK+
+      UqTTHZ3JhfF5NXjqDKBHY1TKh8QTacK6iiBFWFnOQSBEwBVJZxXSmTTFpSCt9pBMJgF2DyOR
+      JhrSqfe7hCIJBp0tBiOLVCrJ0BYIR4IIQECWaPQdSqUUrigiBEU2dyokM3mCqojrOsjY3Lm/
+      RSadQFJU4mHlaUP28XkhLqwItmzHk2CbFtF3LIK92fFF8OltnOlCmGmayIry9ECb62I5DvIz
+      vsD/942PafdP/zo0idCh47qIHo6HKQuDIuDl60ziepyVjb/xa2+jqfJZOoDNd977Bm/94pcR
+      Rm1a/TGCbZIrzlGr7BJNzyBYQ4YjE1tUUJwhlqjhjrqgRgipcFRvMzc/B8C3P9rxo0A+p+av
+      /cobZ+sAncoW4WyB3f0DhFETyTKJFma4/f6H1McG+lEbYWTw+uur3CvXEEyT5aV5tst19o+2
+      yGWiFBIa+60xxdiFzOHzmULO7E6qdsbMFwscVquEQmEka0woHGQQDKKLLsXCDObAQJNlJEnB
+      7DWo1+u0ekMCioIWChMJqfS8Z8v6+Dzkworgr37vHr1zToc+XnL306EfMInrcVapEL/+pXUC
+      inxxHaDa7OMlL852HMQJRD1ESfSUP/NgQ4y3KJADLp5uHNuxEQXx3K/HpKNAM8nwiVM+nsm/
+      ArkO927fQtDjLJeKxwMa97l1v0wmGsBRI+QziUcOq+xuUm0NuX7tCka3wSef3iWWKbK+NPfY
+      0/yj/+c9XwT7PJN/8ff/EmFdfeLfJ+4Ag/oOYqLEUi7EvU8/pjdyiKljjnoazcNdFldWuHmz
+      TDAawzG6DB2J166sMeh1cVBwXJdwLEUycch8aZbt+7dpGTalfJq9vX0Ky9eJB/1UCJ/JMPH9
+      ALKiMjIGWOaYsSMzkwii6FFKpQUK8wtExCHVzghMg83dCg/SnYc2uP0a+9XmZ6zZbG7uAnBU
+      O2JkdKjWu5Mess8rzMRnADWWJ9bZYu/QIZeO0BrYzM/EMVwVtDSRcJD57j3CiSzXVYUhKgKQ
+      SSUYROJETqarTDaPJMhcu36FluGQjgQQJJV0MghAQJXRVD8c6vN0niVpLqwIBo+iz7YRBMGT
+      DcuykCTJ8wqsZxF8ia6HZVnIsrcH24vYOIdHqEuv08ERFaLh4CN/NfpdkDX0wKNJb65tYSEh
+      CfBb//6HNHtDL8M4xkME0/WYwjAxOxP4LtNyPZ5k41e+uMLba3lPth/HmTuAPR5w++4WhdkC
+      AdFm96BBqZhlc2uXQjHPN//oj7jx7s9hdFrMLy7RONxFCiaJBmDj9keEFt5lLi7zwb0DPwr0
+      CvHW6uRvfjgHBxAVnWRUpVqtU9lp4lgWgiQxGPS4v1tlcWWNYfuIYmmRWx/+gFBqDruyS10U
+      WVqY4/CsB+xzqTnzqhCuY2IMbRzbJhaPo8dSyPYIUVFRZBFFUYhHw9y7c5dYOk+/ecgYCVV0
+      uL9TQb6Qtex8ppULK4K/+cE2g5F1ahsTeV91HASPy/YTGYvr4uI9HXoarseT0hiuL2aZz8We
+      y8aUi+DJMJeNYtqn991JbABxbBvR47I9rnucv+7hxnFPNsR4ufmm5Xo8SGMopiNEggFPtp6H
+      s3EA1+bHP3qfcGqGlYXZz/3JHvXo2QFiQYXNO7cY2CLLKytoyqMX0u7XabgxUkGR//m3v+OL
+      4EvM3/uvfpGffW322R/0yBk5gEO31yOaETjY22KzXGc+G6PaHZHVbD6twy+9+zq9ThchHKdx
+      sEet2SYSi9Nu1BHVIDENOs0q0aWfIRX0hYDPZDizOymdm2VpvkitXmfQbCCGoqjuCFGLMDs3
+      jyxCIBjh6pU1+oM+q2urtGsVQokcKhb9scvifOGshuvzinA2M4AgUSzMADCTyxGK5YhoKt1g
+      nGxhnuH2NpYTIz9bRASWlpbZ2Nzmyo13aB7sIeVnCUkW1Xqb3OzxkFOxILaHzTEu7smajwfh
+      OAEbx1a8lSR0H5SPPOfvMjkbAgHljG7NixoFgsux9O+nQjxq4+KnQrgu1YN9lFCCRDT02I8M
+      h0M0TfvMIQ6GMSIY1MF1GY7HaIEnRwH+19/5T9Q7p0+FcN2Tp9U5hw6Pd4R5C2Hy4Bnm9btM
+      wsYpj1+YifM3/8I7pz73aXkpDtCrlznq2RSDNo1qmXrPYiYdpXp4SCo/j9E65P5+nWtry2AO
+      UWNxzKGJ41h0Goe4SojK/jbxdIF8MshOpcF8Mcv2zj4Ly6uoEtzba/hRoMvEOb2IvBQHCCVz
+      6M177JZNIorFwdY+Y2eBUjHP/vYekhpgJh2nVj1EFEb0y1VS+QK9dhnbibG+HKXVjh/nDd3a
+      wcVlT4KRaTG2bFSvsXcfnxNeShTIHA4YjCwkSWQ0GhMMBVG1IFogQCgUZtCt0eoNySd1hnIG
+      xx6RTkbR9DiYLQ5qLSKRMLquk0olUUMxEtEosmAzNPzaoD6T48KK4B/eqTAa26e3cVIFwVND
+      iAlUMHBxcZ0JrATjtcrd+V6PaCjAjeXcJRHBZ4Aqe3sNchzxZOnfgw1bQPTQ2AKOX31d15sj
+      HadCcNKh8XSc9/VQPP6ep+VcHGD73qf0RiaheI6FYvZUNv7Pf/d9XwRfIl4rpfkf/+Yvn/l5
+      z8UBRsYQ2wVrPOL2vU0k28TGBCmIO+rSqTfJraywe/8+6XyJVnWbTDrNQXPIm2/eeGY3GR+f
+      5+Vc7iRVj7C2toLRa2OaY7rdLigaayuLuKJMNhml3WoSzxaIR3SyxRKFQpFsTKHR9J/6PpPj
+      XGaARDLC9k6FlbUrdOsVnFSa6EnTDF1y+HTziC/9uS9T290iHIkRi0VRRBdJDZPPRgGX+VyM
+      oPbkgkfP4kEPSi88WLb3yiTGMg1j8HI9ipmox7OfjqmLApnjEZYDuvbkVeDLtPTvp0I8auNS
+      RYGsscHG5i5zC0vogc+fbjAYEAwGcW2T3tAiEgqws7mBFIpTKuafGpH4x//smxy1B6ce10lb
+      3HOvgvBwLOebCTHx6/EXfmGdP/fu8umNnREv3QHu3f6U3OI6rtWnNpAR7CHWqEfPkrGNBrYt
+      MrewgGm5gIUghxnXD2jGQhzs7jFbWqR9VEbWgjQbLRZX1gjIApV6148CTTEdD917zpKX7gAr
+      61e5d+c2gZDG0I7DuIGmCthoiLLGciHM/WoDJIVkLMnB3hZ6WCfU62OP+mzuHSCYQxajIWqu
+      y9i0CXicIn18HvDSo0CtRg0bCS0UZ9gqM7RcAqrKeDRCD4eRVI1QUCOkBQARXdcQRRnXMZGU
+      ACFdI5vNIMkqomtjmqffCO/j89NMnQh+HhzH4fZOjbF1+h0xzsn7qpc3+EmkQkzCzqQa/k3y
+      euRTEbKJx6fCP41LJ4JfFs3ekKGXXKCJtAU9/sG9ic/jDjFeHcCrjUlcj4iu8IXV/EQCA2fF
+      1DjAuFXmu7erJKIhSsUckUjkYWz68zHq43/989/7wBfBU8ZrpRRfuFI872G8EFOTU+A6JnIg
+      iONY7O+XqR3u8Yd/+B4H5T2+/ofvUT/Y5Wtf/Q+Um8Z5D9XnEjE1DgAC4WiM19bXABj2+6xd
+      u4457LP+2nVqzRYL83l6Xd8BfCbH1LwCKdEZ1iMyiiyyuLjAsN9lMLYJxFIYY5uFhSV6xohI
+      5HjJ/OpChlwy4uGM3uuBTyoVwnsiwnTUR5/Pevk9zocLGwWCy7H076dCPGrj0kaBep0majCG
+      OoESz//9b32dQy+ZodPx0LxwNqLBAP/0v/1VDyeaLs7UAWoHu4TSItXKLrl8kWq5jBKKkoko
+      7B3UmZ/Ns71fIZ7MIplduqZEQhdoDGxm01G29yqUVq8SVAS6/RHt3sVYbr9UXLj3hadzpiJY
+      QGBkDHAQ2du5TyCSRjQHdPoD7EGd7b0a2dIK436Dja0dht0OQ8vBtW3ubWyA4NLt+F0ifSbH
+      mTlAq3ZA1woQCQgIgkg0EuFgbwtH0RFxkbUIsVgYTZaIROPkc1n0cBhVkbAsi9lCHseVCIX0
+      sxqyzyvA+Ylgx6TVGxN/QuW4px7qOOwddbCd8+0PYNs2oih5TkM+FsFeVnFdwNtKsO04iM9x
+      PURRpPSERhW+CH4RRIV49NFOkM/L7Z06/aF56uOPc9fBi3J0XAdRmESHGAfBgx2Xk6oQL3jj
+      rc4lubZwXJRgElGgi8iZOcBHP/4+LiLJ4gqpkIykaki4WI7D3s4WxflFVEnAGJkEdQ3DGCAr
+      AUTh+BYVROGkduhxa9V/88ef+KkQHvlLv3T1oQO8qpyZA9i2jW3byKLAR+///xhijJhqkptf
+      o92s02wP0IQhW3tVllfXQAkwHvYISAEUyWI8GrG5s8f6mz/PYj5xVsP2ueSc2XynqBqZVJxm
+      o4KgpQlILpFEhnwmgSTJiJKIpOq8/sZbRAISkixh2w7DQYdqvQmSwtXrb5BLhs9qyD6vAGc2
+      AywtrTC2XWbDYQb9HkpAQzqpZLayuo6k6qgy9PpDwuEQ/X6f/bHBwuwKNiJ6QKXX76MHVMDl
+      3StFWn0v5dGP/+upEprjIgqCx320AN72Fp/2uyzm46c+52XBT4XwUyGA6bker04U6IRGvUEk
+      GkKU1IczwrjfYiTqYDtEwo+P+//G//YfqdR9EXxa3l7L8/f/2i+d9zDOnXN3gGq1SmWrxlAv
+      MheXqTZ7zCYVOnIa2YHG4S5DAujimE6nz8LVGwTl49cP5+JNXlODf+2OmYqgbzKTZXFhjl63
+      S6d5SHdogzOm3e7QHQw53C8zckXWS2nqPX9TvM/kOPcZIJFIEAkpbO3vElZkwtEk4WgCVB1V
+      kGnVuiRSSeKxGGJAJuJOhc/6XBIurAhudoeeEhMd20EQvadCSKLkuZraeYhgRZaIhX5SftIX
+      wReMb364TW8wPvXx7kk9Qk9lQNyTMKhHvNo5iaQiCPClN0oszPjhzefFuwNYI/7gj7/Dl774
+      Orttl1xYQtbCSALYtklADeAIAook8Mdf/wPe/tIvI9sGg6GF4FpEEyl6rTp6JA62iWmOGVoC
+      QcXFFlRc0wBZJyBDtzcglUoB8Pvfu+enQjyGxXzCd4AXYCIzwPxsjq2dCo6q8d2bm6iRODOp
+      KJ2jA1LFOVIz8yj9Cum5JSqVI8bdA+zhkGguw+HeIbu1Q8LxFMrYYP3KMge1Hq7RZ36hxP72
+      Bnv1IcVshLguUZaj5KN+l0ifyTARRSnrMSSrh+mIxJNJlhcXECyD3OIS29uHRIMK+0dtdFWh
+      164RDEWIx2Ik00lERBKpDIvzRVLZPNFgAEEQsK0hg36HtuEQVGTUYJhsKo7lIQXax+en8S6C
+      XfdEjLq4roDrOiAIx54lCA8rljmOgyCKuCd5+J+tCe7YNoIoPizN5wC4Di4CuA4gIn6mAZzr
+      uvzOH31Mx6MGEPCYxuC4nhrTHRs5GYsHO58tjfjld5ZYLrx4suCrKoIvbBTIGJl4uXufdwPI
+      U23YtqfoDRzn8juOcxxNOiXOcatJRFEkoMrIp9hc86o6gHcN4LrsbN5jLOoko0GSySTmyMBC
+      Rg8oOOMBnbFA/AkpDfXaEfFkgq3NPeZyMTqmRCgURFefPrS/85tf80XwY/i7f+Xn+cUb8+c9
+      jAuDZwcY9WoMxQirpRw33/8h21u7lEoFHEll4/YWyUSMni0x6OsYrSqmFCTgDukMRiyvX4Nh
+      l0rV5rDeRBYs9EiEwcDh9kcbaLEEYdmmWm2TL81QrbZYXVtH87tE+kwI73eSIOA6x9WJQ7Ek
+      pVSc7nBAt1klmC6RToTZuHsHTRfY3D7CskwcSWVxLsfQGJOcybJ5+z4rcyn2mmNke4QxMklk
+      Cqiiw8B0KKZiOKKCIrn0B34pFJ/J4XkGCIRSBIX7bO6USSYTaIKAJIIoBajub9FU0vzMz/0c
+      o36PlaUcjhoiEdEJaAoyCoKsUJzLk87m6Y8O0MNRZGRczcVxAvTbde5u7LJ04zogoXvoDOnj
+      89NMvQhuHh3QHNgszhceiivHcTAt29NulomkQlg2kuxxTcI9FuReqkK4jot7UhVClkSkUwhZ
+      XwSfM5Zp4rigKMrxfe062K5AIjPDg6Ce+yA0Cvyr9z6h0/eaCoGn4rbOSTUHrxUJXY+pECFN
+      4a9+5cYrV9FhEkyHA9hDfvzjj0mk08zm01QOGsylA9xuSKQVAzkYJ6KJbN+5iVJ8k7m4zLc+
+      3PGjQCekojp/9Ss3znsYF5LpcAAxwPrKPDfvbhNUoF7bx+zFcEMpDptH1Lv7FHNJijMZjs57
+      rD6XiumYMx2L/YMq4XAEx3HQ9DB6OExEl0GUiEUj6IrAVqVJUJ2OIftcDqZeBD8Ox3HYKDex
+      bI+lEUXBkwawHdvTCi5MZiVYEgWWiwl/U/wpbEzHK9Ap2D/qMBiffnuk65zsB/BUFmUCbVLd
+      k/0Az5kLlEuEeXst/8g4fE7H2fYHKG+wcdAlEolyZbmEadkoioxpmsiKgjUeI6sqtmUiSjIC
+      LrZlUanWKObz2LaFohzXE/3tP7z5SorgL14tPuIAPqfnTB3AdmBp9Qrtg01u3Xyfrd0y8/OL
+      1LsG1xbT/PjOIW+8tsCPfvA+oVQBze2TzRe5c38TYdxl46DHu194E20CHWZ8fOCsRbDr0Kgd
+      MRi7IIi8dv0N8oU82bBIYygzl9GoVOqkC/OsLM6SyMwwPztLKh4jmsiSCcPRK/jU93l5nOkM
+      kJqZQ2h1ScwXEF2bZrtDLBYFFonForRbQeLJBP1OGykQJBWPgiiyuryEpAbIFZdIJKPguryx
+      MsN810NpxAl0eDwuse59T/CLjGVtLuX5fD4/4cJGgeBylAL0SyM+auOVjgJVdrc4bLTI52bQ
+      Yymi+k+aaIwGHVCjKCL8d//09znw2iXS68N7EjaeYeeX31nib/za2xM4ic/jmDoHyM8t0Orf
+      IhcRee+Dm8zls4Rli1pnRDEdRVGjKMBwbGGMLn+VuLFln/cQLjVTHU6ZW1wFe0Sv16d9tMfR
+      UZORH/L2mSBT6QDxWBxkjaguE41EEAWRUCxBNB4nMJUj9rmoXFgRXG32vXeJnIpUCHCfsqIc
+      0lXiYe2pNnwRfHobU6cBnpcf3ql46hLpOMddIr38WI5z0iXSY23QB6VjHsdyIcE764XTn8Dn
+      qZyrA2xubcHYIDO/gj3sE47GsM0hDhLm0EALRzCNHq4UQJVgYIyIRqMA/O63b78SqRBf+eKy
+      7wAvkXN1gMbhLnI0j36wTV9QqBy1aFW3Kc3m+dGtLVLZAhFhwG5jxFwuQkiGPteYifilEX0m
+      w7lKynimSIghvfFxG1RBEMnmZ4kENQqzCyzPpumZElFNRQ1GKM6kMT2kQPv4/DTnOgMslEqI
+      goDjuozHYwKa9lAQXo0MkRWVN6NxBElCEkVEQWAOAXD5+etztD2XRsTTxvrjMo/eNACue1wl
+      8gnp0FdLGQ/GfZ7FhY0C2fbJzXdKbOck6uHBhmWfRD08eMCzNsQIIs+s8uBHgU5v44xnAItP
+      b36Ko2isry4/7ArZajaJJx4t6NrtdohEoo+19N/87199ZUTw3/71d897GJeWM3YAG8tREAY9
+      Or0W5Z19MsUSnaMDuoMhgjmgbTjEYxqGYaFpCmOjR/mwwcxMmspBnRW/NKLPBDnzO8kyx8iy
+      SKvZxnYsygeH7G3eRVACbG7v4thjWp0+C4sLdDsdtje3ELAxbQFZAsM4/Xu/j89Pc8YzgERA
+      gbGgko3oGH2DaCLOfO4XGI1GLJZm6ZsiyWQcWRRIpVLIqTiVWpuAIoML6jOqRvv4vAgXVgT3
+      h+OHVeJOZWNSpRElb10iOdkPID5hP4AqS2jPcHpfBJ/expQ9Tt2TH/PZP8RXv3vPe4cYj7u5
+      JrYj7Al2cokQf/4X1j3b93kyU+YAJt/71vcRJYHXvvAFOrUauZkcY6OP7Yp0Ox2y+Twi8I0f
+      bV76KND6fMp3gJfMlDnAcQFcW1Cw+m12N+/QGFj0G2UWCmnK9RGxdBbdjwL5TIipvJNU0aZ8
+      WCMUjmDbFrmZAtFYEkYtGq3BeQ/P5xJxYUXwv/2TT+l5CIkep0N7rQznnuwpOD3uSZfIx1WG
+      y8RD/OrPrj7HOHwRfFobF9YB2v0RXkbunLRrPe8ukQ+EvyhKBDXlmRGfx+E7wOltvAQN4HLr
+      k1usX32NBw+1bqdLJBp5zEcdPrn5IUo4xeri3Of/Zo/pDF2iocBjz/L3fuvrl04E/62/+AV+
+      5WdWznsYrxQTd4BR64D+0KLZMzjcukM0XcAeG9jjPtvlKqV8irv7TRKJBCtzObr9EaWZINvb
+      O0QVmYFoUzvqslrK0ujD7sZtxECYgDCi3x8wf+VNIuokapH4+LwEEby1U0ERTfb2KgSDOr1e
+      l8FgQKPRwGg1qLc65EtrCPZxt8eAFiQSCtLv9zF6XZA1FNGm1+nSbDTQ4jkke4gtqVxZyNEa
+      +GVCfCbHhGcAl3SxRDKVolGr0es0CUci6IqIaxqMHYlUOo2kS9hCCgSRublZQkGddDxErdEn
+      r8h0RIVwPMV8VKZ7tIcazxAJKkgBiQT+bjCfyXFhRTBcDtHnl0Z81MaFEcGu4zA2LQIBleFw
+      SEDTPhcStGwL13Ef1vSfJP/s9z6g1Tt90+zj9APwksjjus7Jj+2tT2Q+FeGvfPm6Bxs+p8WT
+      A9iDOt98f4s/+wtv8I3f+wZ/5te+zP52hcWlEgd7Wxw0+8wXZjjcuIuYnWMuodMyHFKxEP1u
+      Hy0UxDAMnFEftDhhFQ5rTUqlEuWdTVL5ebq1MmhRwqrA4VGThcUFAL73yd6liQJdLaV9Bzgn
+      PGuAdETl7r1tcvPz3P74IyxzzI8/6JOZKRAN2RzVjoiE4qRKRT741ntYtkQnlyCZLbFx+xZL
+      V2+wf1hmv77HTCpGJhVj45OPOOibVNsGEcVl/94e2UyEuVSIvdaY2djUZXD4XFC8RYEEkfRM
+      gaN6i2QoQDQaRdXiFGcSHFV26BkmkiShhxW2N/eIRqNkZgqEwhHSiSixZIawDp2OgaooBMMR
+      NE0jGI4QkGUKuSStvkFAUdBDEYKaNp25Gz4Xlgsrgv/gBxueKsMdN8mbQGW4CTTJS0Q1/vRb
+      i57GAb4IPo2NC/sucW0h4702qNdUiFPWBk1GdSLB4xXuB1Egn/Ph7B3Atfno5qdcu7JEpTWk
+      mHm0GgTAUbWKaZkUCsXH/v1/+OffvLAi+G//+rt85YvL5z0MH87FAVxcc8B+pUrHFGmVt7BE
+      jWREodnqkinMUq2UsZHQVRHJtTg8apJIxak1+6yv+1UhfCbHudxJoUSOYesQyxwh6THCskOt
+      O2Z9ucDu9h65+RXCJ62Rtre2EEQBJRAiIFq0u8Z5DNnnknL2M4Agkk0nUTIROmMZZ1DHkrOs
+      h2S2Kg3eevMaO1tbRBMZNEWkNJtnp1wjrAdoKzqJWBA4rpsfCZ5eBJ8nqt/neGq4sFEguBxR
+      Dz8V4lEbr0QUqNtq4MoamiqjqirmaIigaDzvw/E3/+33aXrsE4zHTsGnrQrxaz+/xttreQ9n
+      9pkU5+IAvXqZ3aZJISNz79YdArEUuZgOqk3t6JBwPIs47tK3ZeIaVNsj5mYSbO8esLC8hAR8
+      vFm9sFGgn3lt9ryH4HPCuThAo9FlrrRCRBWoyAE0Z8hRtYcSCiGE0zSrexweVJDkIINUFCSN
+      O5/ewnRc9g8SzM/Ez2PYPpeQc3GAwlyeD29+RHomTyQaISC5uMIYWVbRgxoDQycei6GGEkRD
+      MnuVBtl4jPbAJBkPnceQfS4pF1YEf+fmLsb49LvD3JOVYC9lIY5TIV48HfpqKc1s5rjsuy+C
+      H7XxSohgr2TiQcbW6X13Mg5gn9wwz7YhiQKvLfjdXqaN6XEA1+He7VuMXZnV9Rre44wAAAxv
+      SURBVHWetdj7T37nuxdKBAc1hd/+B3/5vIfh81NMjwMAhmEQycxSL29SbXSIRiI4ahjb6OCa
+      A0ajMfml10mGJ7/DzOfVZKqWJBdWr2K2K+xUO6yuLtPvtBiPx3S6PaRAkIW5HP3+6bdB+vj8
+      NFM0Awj02zXUWJ53cgk2tnZZu/4GlZ0tYrPzNA+2qIpZlkoRXNcllwwjeMnFd11P7/8vaiMY
+      mKJL7fOQCxMFMk3z4eb6yxT18KNAj9q4sFEg13U52N8lGM8QC+uf+5sxNNA1/ZFjxkYfV1Kw
+      HQhqMjsbG4jBGLMzn4+Y/HRlif/pt79NrX3OmaHH2RTP5K//6lt+BGhKmagDVLbuQiSHKsH2
+      xl2UcJKQZHHUHSM4Jql4jN27H2MnSswnAhy1BhTSCQTJoNyyWJtPMrIk7INdmmGNg9195hYW
+      6dYriIpOo9FkcWUVVRLYqrQuTBTISxVrn5fLREVwx7DIpqIIow52IE6ndsjeYYOFuQK91gE7
+      h20yqQylhRL9bofG/n129usY9k+2BB5V9uibNsNeD9PocH+nwmGjgy7bmLbD2PRLI/pMjok6
+      QGk2x80Pb9IcuvRrZRxZI6LLbGzvk55ZIK65yOEw+1vbjMYmeiiIpmkosoIeUACBgBZAkiTG
+      4xGyEkAPKOSyOWRFQ8JiNLqYewB8ppMLI4I/i+M4fHD/0NNsMJlN8cdVIZ5lYW0uRSLyqP4B
+      XwQ/zsaFFcFnieO4HqtCHJdG9Noh5lgJP57lYoJcInz6E/i8dB46QGt/CzIl4o+pvX/nk49w
+      5BBra0vP/c60efcWtc6It956A6w+P/jBTWYXl5nNP380pN+q0rE0zH6D2fkS4mfu1v/rd384
+      9SL4N/7Ld/mz7/oOMM08dABrZGC0G2zs7TKTjPHp5hbJ7DxvrmexhBivrc1z++YHCME43cMd
+      6kORt6/M8eHHn7K2ssh23cDudwlGorzz1uvY4xHIKpZpIrk2w9EYQRT5wXf/hHR6hlp3gKYF
+      iao2GwddkgGLg/aY5UKanm0TS8xQKqTZeP/7xAurn7v5fXwmxece6OZoSCJbQLKOc3Jy6TiI
+      OiOjQa/bQ9bDrC4WGVkCy4tz1Botsqko3d6A0so62UyGVPQ4X99wBNxOmYOWAQjMlpYo5lIk
+      MwWSIZXkTBFsE9N0ePPN6wxGNitLCyiyxtr6FbCHCIKIrkXJzSSxbRvHsXEunmTxmWIeimBz
+      OABVp3lYJpTI0KkdEEpkiYY0jF6bWmdIJhkjoGn02w3ahkMyrNDqDYlHw4iqjj0eIYoCAU2j
+      16ozciU0VSWkqwzHNroWYDgcomkBDst7hJM5WtUytqSRiWnUOiOyiRiKpjIem2iBAMPBADUY
+      xOh2kWQBQQmiiPC//MvvUO942BPsnpRG9FQe/ekl1v/yn7rKF68+vrDXZ234IvjzNvwukc/g
+      Mv3gvgM8auPCR4FGxgDkAO7IYIyLpoUe1sKZSEFZ4B/+3+9R9dQ0+znzGJ5qwX1kBglqCv/k
+      N77iya7P2fFSHEB0R2yXOzjDFtlsGktS2Ly7SSyZ4sMf/4h33n6L8lGDaCyJJoxo9S2y8RCV
+      6hGirBCOJZGtPj1TIq4LNPoWxUyM7b0KCyvraLLAUavPwRRGgcK6et5D8HkBXsp+ACUYx+zX
+      cQWZQadBeesezaFNu2cwVyqR0l205CzmsEe/16dW3uag1mNpPo2lpRj1Gtzb2KLTbNAbjrFt
+      i3v37mHbJs1W92UM2ecV5SVtiBGIBFWiiTSaHiKdL6AJDrFYFBmbet8moimEQyFs2yEYiRAO
+      h5EVjVgwQCgcJZdJE45G0QIK47HJzEwOBIVI+PErqj4+p+HCiuD7+w1M+5z7A9j2I+JVEgXW
+      59PPbcMXwY/auPAi+CyoNHoYI+vUxx+nQggeUyGOBf1MKsIby7nTG/I5NybrAK7NzQ8/RAyE
+      yCdDEM4R00Qcx0WSBCzLRhJcykcNCrkse3u7FApFJEl66LXH85ELrovjcnyc7SB/5jMA/+8f
+      fDQ1qRBfujHvO8AFZcIzgIAsibiiTK28RVd3Edtb7B+2ePuL73LzR99n/urbNMv3sR2RerXM
+      QbVGJh7BGJsEAiJjNwHjJqN+AzU+i2gcsbFdZnF1hWq9z7tfeMtvkOEzMSZ+J8VTGWyjRSCS
+      IBIOgRTg+o3X6TTqLC6WGBgGwWCQsWUST2bJZ5OMLZtYLIrtuAy6TTrdAcW5BTq1KiNX5NqN
+      G2QzM2SiIrXmdDz1fS4HE58BQkEdbXGNWFin2eqwcP067d6QYmGGTnfAXDiMKMxj2zaiJCIg
+      IIkCjWabfGGWTrOBHAgiYXHlWoxIUKXR7BKLhnGcEql0FFyX15dzzGa9pUJ4EWuftbFceHyf
+      M5/p58JGgeByRD38KNCjNl65KFDjqMJuuUo8PUOp+Hxi8u/85tc49PA65D0RAtbnkvyD//q/
+      8GjF5zyZCgdIZvJUay1KxRzb928zFoMkdIFaZ0w8LHHUGDA/m2Fnr8ry6hqaImKMTE+NsifB
+      cHz6MKzPdDBl4RSLfn/I/v4u9XaP9bUlmh2D1XyIvVofSYSRf9P5TJCpmAEAYrHY8T8EkXgs
+      TjIa4s7dTWJhjTvlLnOzOcrl7sP3y599rUjLS53QB8rHw3tQIRny3OXddV28yrAHNrzYebAy
+      PgkbXnAcB9v2VvrmRWy8siJ4UqkQoiheChE8LdfjceklL9PG1MwAL4LXp8ykbExiX8Mk7Fym
+      63HWNi7kDODjMyku5AwA4FhDPvjgY7Rokquri8993KDbYHOnjKJFcYwGfVvh7TeuvZgUcF0+
+      +eB7RIvXaJfvYIoh3nj9ygvZcM0BH35yj3SuwKhTpd0fc+X6DfQXSPPo1Svc2asRCkcRxx26
+      I3j99eso0vONpFU74M52lXffXOf992+iRxOEZIt6q8/qa9cJa89uRFI/3Ger0uLN1xa5fWcT
+      W1IJyxaNjsG1N99Ce46xVMvbCPEYaT3K+9/+BqW3fond2zdRglGuXVl5ru9S2b1HrSuyXkpy
+      6/4uM8V5WgfbDEyB19+4jvyEGW7KokDPz6hZJr38BhIvFgoNhhOkYmECOkhqioKu8qKrCa1a
+      mUA4jmV1UfU86YDEi65J13Z3GAki7U4LmwArczna3RcbiYDD2LSwLAOkCKVklO74+a9HPD1D
+      RFcYN/dJLd9AEiyGNtxYKz73GksqVySoikhqkHwuiaYFMJF4YylNufF8QYpsYZZAUKG6v00k
+      kWDYOiQ2dxVFev4AQ35uDhmXvb1dBFGg3WoiamHms0HagycL4gvrAEooRrOyw+gFU6IbB9vU
+      Bi7pRJqh0eRoYKC94LlHY4t244hqrYcxqNEwhrzoRshwIoYeCOOYY8zxgMNaAy0QeCEb7VaP
+      /GwRczhmNOxS7XTQ5OcXkEOjT7/Xx1bCtCo7DEcW9njMXqVOOPh8YzEGx7v6Oo1D7u83mMmk
+      sUYjtist4s/ZymrQ69JpdRmbNvWjKq2BRae6x/AF1nn63S79Xo+gHkKPxDHHQ4aDHtVGH119
+      8jW5uBrAdWm3GqjBGPoLdF8ZDno0Wh30cBRdchk5ErFI8IVP79gmliNiDXvYokok9OI71drN
+      OooeQREsuoZFMh59oeNd16FWrRJJpBHsEYOxSyL2/JXouu0m3b5BJJbEHfdRglFU0aHZNUgl
+      4s+1V6LTqtMbjAiHw/R6PRQtSDwUoDMYk4zHnstGq3HEYOQwM5PFsUYgaRjdBlIgTFB7vkdL
+      o1ZlOLZIprMMOk2C0QRYBkNbJB55cm/pi+sAPj4T4MK+Avn4TALfAXxeaS5sGNRnyrFHNPoW
+      yWiIdqtFNBbD6HcxRmP6/QGyohILBuiaNoogMDCG5JJRDFdh3OuQzmYxRwatdgPThNRMAU2e
+      fIFkfwbweTl0y3z1Wz9m6+4n/It/+a+xHdBDEazeHlsVg2w2S7d8SN+xMXod9vfL9Hs9et0O
+      d+/eo1w5oNc64Ot/9G0+unWXO5/ewkMRkCfiO4DPy2PU5oeflpnNJQEwui26tkhMVfjhD3+E
+      C5S3dzjc3WQoBRBFEUXViUVj5AszjE2XVCREdiaDZTs85/reC+E7gM/LQVKJJ9NoTp++eVyJ
+      W9HDrCzNIwgyX3z3HQQB5pdXee3Nt1AFAVGwqRwe4brHC2CpdArTMmHUptYe46Eh0BPxw6A+
+      Z4yDZbnIsoRtWQiShCiAabvI4vEj3rZtJFnG6PcQRRjbEoJjEo5EPdVxehy+A/i80vxn4U9b
+      j6bhYlwAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
